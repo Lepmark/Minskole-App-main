@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griffin Techs</title>
+</head>
+<style>
+    .wrapper{
+        box-shadow: 1px 1px 4px grey;
+        background: whitesmoke;
+        width:25vw;
+        margin: auto;
+        padding: 25px;
+        border-radius: 5px;
+        height: 25vh;
+    }
+    .wrapper button.logout-btn{
+        width: 80px;
+        height: 30px;
+        border-radius: 4px;
+        background: orangered;
+        font-weight: 800;
+        border: 0;
+        margin: 12px auto;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .wrapper button.logout-btn:hover{
+        opacity: 0.6;
+        transition: 0.4s;
+    }
+</style>
+<body>
+    <h2 style="text-align: center;">Welcome to Griffin Techs</h2>
+    <div class="wrapper">
+        <div>First Name: <span id="loggedInUserFName"> </span></div>
+        <div>Last Name: <span id="loggedInUserLName"></span></div>
+        <div>Email: <span id="loggedInUserEmail"> </span></div>
+        <button class="logout-btn" id="logoutBtn">Logout</button>
+    </div>
+   
+    <script src="Home.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#dedad2;
+    /*   background-image: url(Images/magicpattern-grid.png);    */
+   
+}
+/* ................Theme modes.....*/
+.theme-modes{
+    position: absolute;
+    float: left;
+    top: 5px;
+    right: 5px;
+}
+.theme-modes img{
+    width: 2vw;
+}
+/*................wrappers...........................*/
+.wrapper-1{
+    width: 40vw;
+    height: 50vh;
+    border-radius: 5px;
+    background:whitesmoke;
+    box-shadow: 1px 1px 4px grey;
+    justify-content: center;
+    text-align: center;
+    margin: 3% auto;
+    padding: 0 0 2%;
+    right: 0;
+    left: 0;   
+}
+.wrapper-2{
+    width: 40vw;
+    height: 50vh;
+    border-radius: 5px;
+    background:whitesmoke;
+    box-shadow: 1px 1px 4px grey;
+    margin: 0% auto 4%;
+    right: 0;
+    left: 0; 
+    padding:40px;
+}
+ img.logo{
+    width: 6rem;
+}
+.wrapper-2 a::after{
+    content: '';
+    display: none;
+    height: 0.5px;
+    width: 36vw;
+   left: 31%;
+   top: 114%;
+   opacity: 0.6;
+    position: absolute;
+    background: grey;
+}
+.wrapper-2 h2, p, a{
+    text-align: center; 
+}
+
+
+/*................ form 1.......................*/
+.form-1{
+    margin: 16px 0;
+}
+.form-1 button{
+    margin: 8px auto;
+    padding: 6px 0;
+    width: 25vw;
+    font-size: 18px;
+   border-radius: 4px;
+   border: 1px solid  rgb(183, 179, 179);;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.form-1 button i{
+    margin: 0 10px ;
+}
+.form-1 button:hover{
+    background: rgb(183, 179, 179);
+    opacity: 0.6;
+    transition: 0.4s ease;
+}
+
+ /*.....................form 2.........................*/
+.wrapper-1 .form-2{
+    display: none;
+}
+
+.wrapper-1 .form-2 input{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 4px;
+    outline: 1px solid grey;
+    border: none;
+    padding: 0 8px;
+    margin: 5px 0; 
+}
+.wrapper-1 .form-2 i.eye{
+    display: none;
+    cursor: pointer;
+    position:absolute;
+    top: 38.6%;
+    left: 61%;
+    bottom: 50%;
+}
+.wrapper-1 .form-2 input:focus{
+    outline: 1px solid orange;
+    border: none;
+}
+::placeholder{
+    font-weight:600;
+}
+/*..................form validation.......................*/
+input:user-invalid{
+    border: 1px solid red;
+   }
+   input:user-invalid::placeholder{
+    color: red;
+}
+
+input:user-valid{
+    border: 1px solid orange;
+    background:rgb(255, 145, 0);
+}
+input+span{
+    color: red;
+    display: none;
+}
+input:user-invalid+span{
+    display: block;
+   
+}
+input:user-invalid{
+    animation: shake 0.1s linear 5;
+}
+@keyframes shake{
+    0%{ transform: translateX(0);}
+
+    25%{ transform: translateX(-2px);}
+
+    50%{ transform: translateX(0);}
+
+    75%{ transform: translateX(2px);}
+
+    100%{ transform: translateX(0);}
+}
+.form-2 button{
+        margin: 8px auto;
+        padding: 6px 12px;
+        width: 20vw;
+        height: 6vh;
+        font-size: 18px;
+       border-radius: 4px;
+       background:rgb(255, 145, 0);
+       border:none;
+       font-weight: bold;
+        cursor: pointer;
+    }
+    .form-2 button:hover{
+        opacity: 0.7;
+        transition: 0.4s ease;
+    }
+    .social-icons img{
+        width: 1.4rem;
+        margin: 2px 2px;
+        cursor: pointer;
+    }
+    /*.....................form 3.........................*/
+.wrapper-1 .form-3{
+    display: none;
+}
+
+.wrapper-1 .form-3 h3{
+   color: brown;
+   margin: 20px 0;
+}
+.wrapper-1 .form-3 a img.back-arrow{
+    width: 3rem;
+}
+/*...........................footer.............................*/
+footer{
+    position:relative;
+    bottom: 0;
+    padding-top: 12px;
+    background: #c6c3bc;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+}
+footer p{
+    text-align: center;
+    text-align: center;
+    font-size: 16px;
+    justify-content: center;
+    margin: auto;
+}
+footer p i{
+ font-size: 20px;  
+ margin: 4px 5px;
+ cursor: pointer;
+}
+
+.wrapper-2 .useful-links{
+    position: relative;
+
+}
+.wrapper-2 .useful-links ul{
+ display: flex;
+ text-align: center;
+}
+
+.wrapper-2 .useful-links ul li{
+    list-style: none;
+    margin: 12px 12px;
+}
+
+.wrapper-2 .useful-links ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    justify-content: space-between;
+}
+footer .useful-links ul li{
+    list-style-type:none;
+    margin: 12px 0;
+}
+
+
+   
+/*.............................Support page........................................*/
+.section-1{
+    background-color:rgba(60, 77, 133, 0.601);
+    height: 13vh;
+}
+
+.section-1 .school-logo{
+    float: left;
+    display: flex;
+    position: absolute;
+    left: 40px;
+    top: 12px;
+}
+.section-1 .school-logo img{
+    width: 5vw;
+}
+
+.section-1 .school-logo h2{
+    font-size: 30px;
+   text-align: center;
+   margin: auto;
+    padding: 0 12px;
+}
+
+
+.section-1 .lang select{
+    width: auto;
+    padding: 2px 8px;
+    margin-top: 2%;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    float: inline-end;
+    outline: 0;
+    background: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.search-section{
+    background-color:rgb(49, 43, 58);
+    height: 50vh;
+    width: 100%;
+}
+.search-section form{
+    margin:auto;
+    color: white;
+    text-align: center;
+}
+.search-section form .support-image img{
+    width: 30vw;
+    height: 50vh;
+    float: left;
+    display: none;
+}
+.search-section form  input{
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 12px;
+    outline: 0;
+    font-size: 18px;
+}
+::placeholder{
+    padding: 0 16px;
+    font-size: 18px;
+}
+
+footer.support-footer{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    background: none;
+}
+
+
+	svg {
+		position: absolute;
+		left: 0;
+        bottom: 0;
+    width: 100%;
+    height:30%;
+		box-sizing: border-box;
+		display: block;
+        background-color:rgb(49, 43, 58);
+   
+	}
+
+
+
+
+
+
+
+/* .....................Extra small devices (phones, 600px and down)...................... */
+@media only screen and (max-width: 600px) {
+    .wrapper-1{
+      width: fit-content;
+      width: 90%;
+    }
+    .wrapper-1 .form-1 button{
+        width: fit-content;
+        padding-right:5px ;
+    }
+    .wrapper-1 .form-2 button{
+        width: 20vw;
+        height: 5vh;
+        width: fit-content;
+    }
+    .wrapper-2{
+        width: fit-content;
+        width: 90%;
+        overflow-y: auto;
+    }
+.wrapper-1 .form-2 input{
+    width: fit-content;
+}
+    footer{
+        display: flexbox;
+        position: relative;
+        bottom: -10%;
+        top: 100%;
+    }
+  }
+
+  /* .................Small devices (portrait tablets and large phones, 600px and up).............. */
+@media only screen and (min-width: 600px) {
+    .wrapper-2{
+        width: fit-content;
+        width: 90%;
+        overflow-y: auto;
+    }
+    .wrapper-1{
+        width: fit-content;
+        width: 90%;
+        overflow-y: auto;
+    }
+    .wrapper-1 .form-1 button{
+        width: fit-content;
+        padding-right:5px ;
+    }
+    .wrapper-1 .form-2 button{
+        width: 20vw;
+        height: 5vh;
+        width: fit-content;
+    }
+    .wrapper-2{
+        width: fit-content;
+        width: 90%;
+        overflow-y: auto;
+    }
+.wrapper-1 .form-2 input{
+    width: fit-content;
+}
+  }
+  
+  /* ............Large devices (laptops/desktops, 992px and up) ................*/
+@media only screen and (min-width: 992px) {
+    .wrapper-2{
+        width: 40vw;
+        height: 50vh;
+    }
+    .wrapper-1{
+        width: 40vw;
+        height: 50vh;
+        height: fit-content;
+
+    }
+
+    .wrapper-1 .form-1 button{
+        width: 25vw;
+        height: 5vh;
+    }
+    .wrapper-1 .form-2 input{
+        width: 25vw;
+        height: 5vh;
+    }
+    .wrapper-1 .form-2 button{
+        width: 20vw;
+        height: 5vh;
+    }
+  } 

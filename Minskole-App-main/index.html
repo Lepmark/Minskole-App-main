@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/969f6c4469.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Assets/css/styles.css">
+    <link rel="icon" href="Assets/Images/school logo.png" type="image/png">
+    <title>Min Skole</title>
+</head>
+
+<body>
+    <div class="theme-modes">
+        <img src="Assets/Images/dark-mode_.png">
+    </div>
+    <!---------------------------------------Login forms-------------------------------->
+    <div class="wrapper-1">
+        <a href=""> <img src="Assets/Images/school logo.png" class="logo"></a>
+        <h1>SAM EYDE VGS</h1>
+        <div class="form-1" id="Form1">
+            <button id="button1" onclick="displayForm2()"> <i class="fa-solid fa-lock"></i> Logg På med Student
+                ID</button>
+            <button id="button2" onclick="displayForm3()"> <i class="fa-solid fa-lock"></i>Logg På med
+                ID-Porten</button><br>
+            <a href=""> Logg på med Itslearning</a>
+        </div>
+
+        <!---------------------------------------Login form-------------------------------------->
+        <form class="form-2" id="Form2" action="" method="POST">
+            <label for="text">
+                <input type="text" id="userId" name="userId" placeholder="Student Id" minlength="8" maxlength="11"
+                    required>
+                <span> <i class="fa-solid fa-circle-exclamation"></i> Student ID not found.</span>
+            </label>
+
+            <label for="password" value="User Password">
+                <input type="password" name="password" id="name" placeholder="Your Password" required minlength="8"
+                    maxlength="12">
+                <span> <i class="fa-solid fa-circle-exclamation"></i> Password doesnot match with the above ID.</span>
+                <i class="fa-solid fa-eye-slash eye"></i><i class="fa-solid fa-eye eye"></i>
+            </label><br>
+
+            <a href="">Forgot your Student ID or Password? </a><br>
+            <button>Log In</button>
+            <div class="social-icons">
+                <p>Or Choose an External Provider:</p>
+                <img src="Assets/Images/google_.png" title="Google" alt="Google">
+                <img src="Assets/Images/discord-icon_.png" title="Discord" alt="Discord">
+                <img src="Assets/Images/facebook_.png" title="Facebook" alt="Facebook">
+            </div>
+        </form>
+        <div class="form-3" id="Form3">
+            <h2>.............</h2>
+            <h2>........................</h2>
+            <h2>.................................</h2>
+            <h3>This Page is under Development, Come back Later.!</h3>
+            <a href=""><img src="Assets/Images/arrow-back_.png" class="back-arrow"></a>
+        </div>
+    </div>
+
+    <div class="wrapper-2">
+        <h2>Personvernerklæring Agder fylkeskommune</h2>
+        <p>Her kan du lese personvernerklæringen for Agder fylkeskommune. </p><br>
+        <p> Den beskriver hva slags personopplysninger vi samler inn, hvordan vi samler dem inn,
+            hva personopplysningene brukes til, og hvilke rettigheter du har når vi behandler opplysninger om deg.</p>
+        <br>
+        <p> Den beskriver hva slags personopplysninger vi samler inn, hvordan vi samler dem inn,
+            hva personopplysningene brukes til.</p>
+        <br>
+
+        <p> <a href=""> Privacy Policies and Cookie information</a></p>
+
+        <div class="useful-links">
+            <ul>
+                <li> <a href="support.html">Get Support </a></li>
+                <li> <a href=""> School Rules and Regulations </a></li>
+                <li><a href=""> School Academy</a> </li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+     
+        <p> Copyright &copy;Sameyde.no, incl.</p>
+        <p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-school"></i>
+            <i class="fa-solid fa-graduation-cap"></i>
+        </p>
+        <p>Developed by; <b> 1-IMA, 2024 </b></p>
+
+
+
+    </footer>
+    <script src="Assets/JS/script.js"></script>
+    <script src="Assets/JS/Firebase.js" type="module"></script>
+</body>
+
+</html>
